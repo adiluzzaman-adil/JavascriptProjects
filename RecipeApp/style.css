@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Public+Sans:ital,wght@0,400;1,300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-container {
+  background-color: white;
+  width: 400px;
+  box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.1019607843);
+  border-radius: 3px;
+  overflow: hidden;
+  width: 400px;
+}
+.mobile-container header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.mobile-container header input {
+  background-color: #eee;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+}
+.mobile-container header button {
+  background-color: transparent;
+  border: none;
+  color: rgb(165, 198, 245);
+  font-size: 1.8rem;
+  margin-left: 10px;
+}
+.mobile-container header button:hover {
+  color: blue;
+  cursor: pointer;
+}
+.mobile-container .fav-container {
+  background-color: rgb(171, 207, 251);
+  padding: 0.25rem 1rem;
+  text-align: center;
+}
+.mobile-container .fav-container .fav-meals {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0px;
+  justify-content: center;
+}
+.mobile-container .fav-container .fav-meals li {
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+  width: 75px;
+}
+.mobile-container .fav-container .fav-meals li:hover .clear {
+  opacity: 1;
+}
+.mobile-container .fav-container .fav-meals li img {
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.1019607843);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 70px;
+  width: 70px;
+}
+.mobile-container .fav-container .fav-meals li span {
+  display: inline-block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75px;
+}
+.mobile-container .fav-container .fav-meals .clear {
+  background-color: transparent;
+  border: none;
+  opacity: 0;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.mobile-container .meals .meal {
+  border-radius: 3px;
+  box-shadow: 0 0 10px 2px rgba(51, 51, 51, 0.1019607843);
+  cursor: pointer;
+  margin: 1.5rem;
+  overflow: hidden;
+}
+.mobile-container .meals .meal-header {
+  position: relative;
+}
+.mobile-container .meals .meal-header .random {
+  position: absolute;
+  top: 1rem;
+  background-color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.mobile-container .meals .meal-header img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+  width: 100%;
+}
+.mobile-container .meals .meal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.mobile-container .meals .meal-body h4 {
+  margin: 0px;
+}
+.mobile-container .meals .meal-body .fav-btn {
+  border: none;
+  background-color: transparent;
+  color: rgb(202, 198, 198);
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.mobile-container .meals .meal-body .active {
+  color: rebeccapurple;
+}
+
+.popup-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.popup-container .popup {
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: auto;
+  max-width: 600px;
+  max-height: 100vh;
+  width: 100%;
+  padding: 0 2rem;
+}
+.popup-container .popup .close-popup {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.popup-container .popup h1 {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}

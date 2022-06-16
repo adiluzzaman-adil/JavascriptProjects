@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Public+Sans:ital,wght@0,400;1,300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #22254b;
+}
+body header {
+  background-color: #373b69;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+body header .search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  color: white;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+body header .search::-moz-placeholder {
+  color: #7378c5;
+}
+body header .search:-ms-input-placeholder {
+  color: #7378c5;
+}
+body header .search::placeholder {
+  color: #7378c5;
+}
+body header .search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .movie {
+  position: relative;
+  background-color: #373b69;
+  border-radius: 4px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+  margin: 1rem;
+}
+body main .movie:hover .overview {
+  transform: translateY(0);
+}
+body main .movie img {
+  width: 100%;
+}
+body main .movie-info {
+  color: rgb(250, 236, 236);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 1px;
+  align-items: center;
+}
+body main .movie-info h3 {
+  margin: 0;
+}
+body main .movie-info span {
+  background-color: #22254b;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+body main .movie-info span.green {
+  color: green;
+}
+body main .movie-info span.orange {
+  color: orange;
+}
+body main .movie-info span.red {
+  color: red;
+}
+body main .movie .overview {
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+body main .movie .overview h4 {
+  margin-top: 0;
+}

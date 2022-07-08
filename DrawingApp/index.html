@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!-- defer specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. 
+    Because the html file should be parsed first by the browser or IDE then the script.js functions will be able to get all the html element.
+    otherwise it won't get any element. Or the function script should be written exactly at the end of same html page.-->
+
+</head>
+<body>
+
+
+    <canvas id="canvas" width="800" height="800">
+
+    </canvas>
+
+    <div class="toolbox">
+        <button id="increase">+</button>
+        <span id="size">30</span>
+        <button id="decrease">-</button>
+
+        <input type="color" id="color">
+        <button id="clear">💩</button>
+    </div>
+    
+</body>
+</html>
